@@ -14,7 +14,7 @@ public class Defenders : MonoBehaviour {
 	}
 	
 	void OnTriggerEnter2D () {
-		Debug.Log (name + " triger enter");
+		
 	}
 }
 

@@ -19,12 +19,14 @@ public class Attacker : MonoBehaviour {
 		transform.Translate (Vector3.left * currentSpeed * Time.deltaTime);
 		if(!currentTarget){
 		animator.SetBool ("isAttacking", false);
+		}
 		
-	}
+		print (Button.selectedDefender);
+		
 }
 	
 	void OnTriggerEnter2D () {
-		Debug.Log (name + " trigger enter");
+	
 	}
 	
 	public void SetSpeed (float speed) {
