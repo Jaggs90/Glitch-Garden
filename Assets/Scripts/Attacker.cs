@@ -4,8 +4,9 @@ using System.Collections;
 [RequireComponent (typeof (Rigidbody2D))]
 public class Attacker : MonoBehaviour {
 
-	
-	private float currentSpeed;
+	[Tooltip ("Average number of seconds between appearences")]
+	public float seenEverySeconds;
+	private float currentSpeed; 
 	private GameObject currentTarget;
 	private Animator animator;
 
@@ -20,10 +21,7 @@ public class Attacker : MonoBehaviour {
 		if(!currentTarget){
 		animator.SetBool ("isAttacking", false);
 		}
-		
-		print (Button.selectedDefender);
-		
-}
+	}
 	
 	void OnTriggerEnter2D () {
 	
